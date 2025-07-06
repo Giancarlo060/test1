@@ -1,0 +1,15 @@
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #e9f1fb;
+}
+
+img.gif {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.navbar {
+  height: 70px;
+}

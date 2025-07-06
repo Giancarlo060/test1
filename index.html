@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoggyGiph</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Floating Header -->
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary fixed-top shadow">
+    <div class="container d-flex align-items-center justify-content-center">
+      <h1 class="navbar-brand text-white d-flex align-items-center mb-0 gap-2" style="font-family: 'Baloo 2', cursive; font-size: 2rem;">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Dog Icon" width="36" height="36">
+        DoggyGiph
+      </h1>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="mainContent" class="container d-flex flex-column align-items-center justify-content-center" style="min-height: 80vh; padding-top: 100px;">
+    <form id="searchForm" class="d-flex justify-content-center mb-4 w-100 flex-wrap">
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control form-control-lg me-2"
+        placeholder="Search dog GIFs"
+        required
+        style="max-width: 600px; font-size: 1.5rem; padding: 1rem;"
+        />
+
+      <button type="submit" class="btn btn-primary btn-lg mt-2 mt-sm-0">Search</button>
+    </form>
+
+    <div id="gifContainer" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-2 w-100"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
